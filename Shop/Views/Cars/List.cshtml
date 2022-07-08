@@ -1,18 +1,10 @@
-﻿
-
-
-
-<h1>Всі автомобілі</h1>
+﻿@model CarsListViewModel
 <h3>@Model.currCategory</h3>
-<div class="row mt-5 mb-2">
-@{ 
-        foreach(var car in Model.AllCars){
-            <div class="col-lg-5">
-               <img  src="@car.img" width="300" height="250" alt="@car.name" />
-                <h2>Модель:@car.name</h2>
-                <p> Ціна:@car.price.ToString()$</p>
-                <p><a class="btn btn-warning" href="#"> Подробиці</a></p>
-            </div>
+<div class="row mt-1 mb-1">
+    @{
+        foreach (Car car in Model.AllCars)
+        {
+            @Html.Partial("AllCars", car);
         }
-}
+     }
 </div>

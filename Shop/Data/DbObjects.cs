@@ -16,8 +16,10 @@ namespace Shop.Data
             if (!content.Car.Any())
             {
                 content.AddRange(
-                    new Car { name = "Ford Fusion hybrid", shortDesc = "Легковий автомобіль, рік 2016", img = "/img/ford_fusion.jpg", price = 16000, isFavourite = true, available = true, Category = Categories["Електромобілі"]},
-                    new Car { name = "Daewoo Lanos", shortDesc = "Легковий автомобіль, 2007, 1.5л", img = "/img/Lanos.jpg", price = 3000, isFavourite = false, Category = Categories["Класичні авто"] }
+                    new Car { name = "Ford Fusion hybrid", shortDesc = "Легковий автомобіль, рік 2016", img = "/img/ford_fusion.jpg", price = 16000, isFavourite = true, available = true, Category = Categories["Гібридне авто"]},
+                    new Car { name = "Daewoo Lanos", shortDesc = "Легковий автомобіль, 2007, 1.5л", img = "/img/Lanos.jpg", price = 3000, isFavourite = false, Category = Categories["Класичні авто"] },
+                    new Car { name = "Nissan Leaf", shortDesc = "Легковий автомобіль, 2010, 1.5л", img = "/img/leaf.jpg", price =10000, isFavourite = true, Category = Categories["Електромобілі"] }
+
                     );
             }
             content.SaveChanges();
@@ -33,7 +35,7 @@ namespace Shop.Data
                     {
                     new Category {categoryName = "Електромобілі", desc = "Сучасний вид транспорту"},
                     new Category {categoryName = "Класичні авто", desc = "Авто з двигуном внутрішнього згорання"},
-                    new Category {categoryName = "Гібриде авто", desc = "Вид транспорту, що поєднує дві технології"}
+                    new Category {categoryName = "Гібридне авто", desc = "Вид транспорту, що поєднує дві технології"}
                     };
                     category = new Dictionary<string, Category>();
                     foreach (Category el in list)

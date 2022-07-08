@@ -22,7 +22,6 @@ C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.inp
 C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.TagHelpers.output.cache
 C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Shop.RazorCoreGenerate.cache
 C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -100,3 +99,10 @@ C:\Users\Anatoly\Documents\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win-x86\na
 C:\Users\Anatoly\Documents\Shop\Shop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Anatoly\Documents\Shop\Shop\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\Anatoly\Documents\Shop\Shop\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllCars.cshtml.g.cs
+C:\Users\Anatoly\Documents\Shop\Shop\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\ShopCart\Index.cshtml.g.cs
+C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Pages\Index1.cshtml.g.cs
+C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.cshtml.g.cs
+C:\Users\Anatoly\Documents\Shop\Shop\obj\Debug\netcoreapp3.1\Razor\Views\Order\Complete.cshtml.g.cs
