@@ -11,6 +11,6 @@ namespace Shop.Data.Models
         public string categoryName { set; get; }
         public string desc { set; get; }
 
-        public List<Car> cars { set; get; }
+        public IEnumerable<Car> cars { set; get; }
     }
 }

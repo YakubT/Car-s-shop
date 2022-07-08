@@ -8,7 +8,7 @@ namespace Shop.Data.Interfaces
 {
     public interface ICarsCategory
     {
-        List<Category> AllCategory { get; }
+        IEnumerable<Category> AllCategory { get; }
        
 
     }

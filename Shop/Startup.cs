@@ -10,10 +10,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Shop.Data.Interfaces;
 using Shop.Data.mocks;
+using Shop.Data;
+using Microsoft.EntityFrameworkCore;
+using Shop.Data.Repository;
 namespace Shop
 {
     public class Startup
     {
+        private IConfigurationRoot confstring;
+        public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnv)
+        {
+            confstring = new ConfigurationBuilder().SetBasePath(hostEnv.ContentRootPath).AddJsonFile("dbsettings.json").Build();
+        }
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -24,9 +32,10 @@ namespace Shop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDBContent>(options => options.UseSqlServer(confstring.GetConnectionString("DefaultConnection")));
             services.AddMvc(option => option.EnableEndpointRouting = false);
-            services.AddTransient<IAllcars,MockCars>();
-            services.AddTransient<ICarsCategory, MockCategory>();
+            services.AddTransient<IAllcars,CarRepository>();
+            services.AddTransient<ICarsCategory,CategoryRepository>();
             
             services.AddMvc();
 
@@ -39,6 +48,11 @@ namespace Shop
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+            using (var scope = app.ApplicationServices.CreateScope())
+            {
+                AppDBContent content = scope.ServiceProvider.GetRequiredService<AppDBContent>();
+                DbObjects.Initial(content);
+            }
         }
     }
 }
